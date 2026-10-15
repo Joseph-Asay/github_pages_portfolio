@@ -1,7 +1,9 @@
 ---
-title: "Joseph-Asay Portfolio"
+title: "Joseph Asay Data Science Portfolio"
 ---
 
 This is a Quarto website.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+This Home page is currently under development.
+
+Feel free to check out the Blog page to learn about transforming raw NBA play-by-play data!
