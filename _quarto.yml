@@ -3,9 +3,10 @@ project:
   output-dir: docs
 
 website:
-  title: "Joseph Asay Data Science Portfolio"
+  title: "Joseph Asay | Data Science Portfolio"
   navbar:
-    background: primary
+    background: "#191970"
+    foreground: "#FFFFFF"
     left:
       - href: index.qmd
         text: Home
