@@ -137,7 +137,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
+<span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./blog.html" aria-current="page"> 
@@ -210,7 +210,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="get-and-sort-the-play-by-play-data">Get and Sort the Play-by-Play Data</h2>
 <p>We’ll use Utah’s 2025–26 regular-season game at Miami (game ID <code>0022500763</code>). The <a href="https://github.com/swar/nba_api"><code>nba_api</code> package</a> provides a <code>PlayByPlayV3</code> endpoint where each row describes one event, including its period, clock, team, and event type.</p>
 <p>Before identifying possessions, we need the events in the right order. We sort by <code>period</code> and <code>actionNumber</code> rather than by the clock alone: several events, such as a basket and a foul, can share a timestamp.</p>
-<div id="2273197b" class="cell" data-execution_count="1">
+<div id="eba99cf1" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nba_api.stats.endpoints <span class="im">import</span> playbyplayv3</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -284,7 +284,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="distinguish-defensive-from-offensive-rebounds" class="level3">
 <h3 class="anchored" data-anchor-id="distinguish-defensive-from-offensive-rebounds">Distinguish Defensive from Offensive Rebounds</h3>
 <p>The API’s rebound <code>subType</code> is <code>Unknown</code> in this game. Fortunately, player descriptions include cumulative totals, such as <code>Nurkic REBOUND (Off:2 Def:1)</code>. By comparing each player’s defensive total with their previous recorded total, we can flag individual defensive rebounds.</p>
-<div id="4cbcd12f" class="cell" data-execution_count="2">
+<div id="99f37079" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>is_rebound <span class="op">=</span> pbp[<span class="st">"actionType"</span>].eq(<span class="st">"Rebound"</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract cumulative offensive and defensive rebound totals</span></span>
@@ -323,7 +323,7 @@ PT10M00.00S                  Jazz Rebound        False</code></pre>
 <h3 class="anchored" data-anchor-id="handle-free-throws-and-and-ones">Handle Free Throws and And-Ones</h3>
 <p>A made final free throw in a regular two- or three-shot sequence usually ends the possession. A missed final attempt does not necessarily end it; the next rebound matters.</p>
 <p>There is also an <em>and-one</em> - a made field goal followed by one additional free throw. In this particular game, we checked that all three <code>Free Throw 1 of 1</code> events were and-ones. We’ll keep each basket and its additional free throw together, rather than treating them as two possessions. This assumption should be rechecked for other games.</p>
-<div id="728a89b2" class="cell" data-execution_count="3">
+<div id="b3b450c8" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>is_ft <span class="op">=</span> pbp[<span class="st">"actionType"</span>].eq(<span class="st">"Free Throw"</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>made_ft <span class="op">=</span> is_ft <span class="op">&amp;</span> <span class="op">~</span>pbp[<span class="st">"description"</span>].<span class="bu">str</span>.startswith(<span class="st">"MISS"</span>, na<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -343,7 +343,7 @@ PT10M00.00S                  Jazz Rebound        False</code></pre>
 <section id="assign-possession-ids" class="level2">
 <h2 class="anchored" data-anchor-id="assign-possession-ids">Assign Possession IDs</h2>
 <p>Now we can combine our indicators with <code>|</code> (logical OR). We exclude the made basket in an and-one and instead end the possession at its <strong>made</strong> free throw, or at a later defensive rebound if that free throw misses.</p>
-<div id="c6b673f6" class="cell" data-execution_count="4">
+<div id="dd891ef3" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>pbp[<span class="st">"possession_end"</span>] <span class="op">=</span> (</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    pbp[<span class="st">"actionType"</span>].eq(<span class="st">"Turnover"</span>)</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="op">|</span> (pbp[<span class="st">"actionType"</span>].eq(<span class="st">"Made Shot"</span>) <span class="op">&amp;</span> <span class="op">~</span>pbp[<span class="st">"and_one_basket"</span>])</span>
@@ -368,7 +368,7 @@ PT10M00.00S                  Jazz Rebound        False</code></pre>
 <section id="check-one-possession" class="level2">
 <h2 class="anchored" data-anchor-id="check-one-possession">Check One Possession</h2>
 <p>Let’s inspect possession 3 from the first quarter to verify the result.</p>
-<div id="b12ace78" class="cell" data-execution_count="5">
+<div id="93b57b44" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pbp.loc[</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    pbp[<span class="st">"possession_id"</span>].eq(<span class="dv">3</span>),</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    [<span class="st">"clock"</span>, <span class="st">"actionType"</span>, <span class="st">"description"</span>, <span class="st">"possession_id"</span>]</span>

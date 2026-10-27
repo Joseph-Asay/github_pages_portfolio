@@ -1,9 +1,39 @@
+
 ---
-title: "Joseph Asay Data Science Portfolio"
+title: "Welcome to My Portfolio!"
+toc: false
 ---
 
-This is a Quarto website.
+## Hi, I'm Joseph!
 
-This Home page is currently under development.
+I'm a Statistics student at Brigham Young University with an emphasis in Data Science. I'm especially interested in basketball analytics and using statistics, programming, and data visualization to answer practical questions.
 
-Feel free to check out the Blog page to learn about transforming raw NBA play-by-play data!
+I currently work with the Utah Jazz in game presentation and as a student researcher at BYU, where I study NBA playoff performance using statistical models. This portfolio highlights some of the projects I've worked on in Python and R.
+
+[Learn more about me](about.qmd) | [Read my blog](blog.qmd)
+
+## Featured Projects
+
+### NBA Possession Identification
+
+I built a tutorial showing how to turn NBA play-by-play events into groups of possessions. Using `nba_api` and pandas, I identify common possession-ending events and assign possession IDs to the rows. The project also explains exceptions and limitations of this simplified approach.
+
+**Tools:** Python, pandas, nba_api
+
+[GitHub Repository](https://github.com/Joseph-Asay/github_pages_portfolio) | [Read the Tutorial](blog.qmd)
+
+### MLB Agentic Data Analysis Assistant
+
+I developed an AI-powered chatbot that answers natural-language questions about historical MLB batting data. It uses Google's Gemini API to translate questions into pandas queries, run the analysis, and return an explanation of the result.
+
+**Tools:** Python, pandas, Gemini API
+
+[GitHub Repository](https://github.com/Joseph-Asay/MLB_Agentic_Chatbot)
+
+### Airport Flight Delay Analysis
+
+I analyzed U.S. domestic flight delays using regression models in R. I used logistic regression to study which pre-flight factors predict whether a flight is delayed and multiple linear regression to examine delay severity.
+
+**Tools:** R, logistic regression, multiple linear regression
+
+[GitHub Repository](https://github.com/Joseph-Asay/Flight_Delay_Analysis)

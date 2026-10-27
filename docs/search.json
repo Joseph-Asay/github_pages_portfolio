@@ -2,16 +2,72 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Joseph Asay Data Science Portfolio",
+    "title": "Welcome to My Portfolio!",
     "section": "",
-    "text": "This is a Quarto website.\nThis Home page is currently under development.\nFeel free to check out the Blog page to learn about transforming raw NBA play-by-play data!"
+    "text": "I’m a Statistics student at Brigham Young University with an emphasis in Data Science. I’m especially interested in basketball analytics and using statistics, programming, and data visualization to answer practical questions.\nI currently work with the Utah Jazz in game presentation and as a student researcher at BYU, where I study NBA playoff performance using statistical models. This portfolio highlights some of the projects I’ve worked on in Python and R.\nLearn more about me | Read my blog"
+  },
+  {
+    "objectID": "index.html#hi-im-joseph",
+    "href": "index.html#hi-im-joseph",
+    "title": "Welcome to My Portfolio!",
+    "section": "",
+    "text": "I’m a Statistics student at Brigham Young University with an emphasis in Data Science. I’m especially interested in basketball analytics and using statistics, programming, and data visualization to answer practical questions.\nI currently work with the Utah Jazz in game presentation and as a student researcher at BYU, where I study NBA playoff performance using statistical models. This portfolio highlights some of the projects I’ve worked on in Python and R.\nLearn more about me | Read my blog"
+  },
+  {
+    "objectID": "index.html#featured-projects",
+    "href": "index.html#featured-projects",
+    "title": "Welcome to My Portfolio!",
+    "section": "Featured Projects",
+    "text": "Featured Projects\n\nNBA Possession Identification\nI built a tutorial showing how to turn NBA play-by-play events into groups of possessions. Using nba_api and pandas, I identify common possession-ending events and assign possession IDs to the rows. The project also explains exceptions and limitations of this simplified approach.\nTools: Python, pandas, nba_api\nGitHub Repository | Read the Tutorial\n\n\nMLB Agentic Data Analysis Assistant\nI developed an AI-powered chatbot that answers natural-language questions about historical MLB batting data. It uses Google’s Gemini API to translate questions into pandas queries, run the analysis, and return an explanation of the result.\nTools: Python, pandas, Gemini API\nGitHub Repository\n\n\nAirport Flight Delay Analysis\nI analyzed U.S. domestic flight delays using regression models in R. I used logistic regression to study which pre-flight factors predict whether a flight is delayed and multiple linear regression to examine delay severity.\nTools: R, logistic regression, multiple linear regression\nGitHub Repository"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Me",
     "section": "",
-    "text": "About this site"
+    "text": "I’m Joseph Asay, a Statistics student at Brigham Young University with an emphasis in Data Science. My main professional interest is basketball analytics, particularly applying statistical models and data tools to player evaluation and performance.\nThrough my work with the Utah Jazz, BYU basketball, and university research, I’ve had opportunities to work with sports data in both research and live game environments. I also enjoy building projects that bring together data collection, modeling, and visualization."
+  },
+  {
+    "objectID": "about.html#a-little-about-me",
+    "href": "about.html#a-little-about-me",
+    "title": "About Me",
+    "section": "",
+    "text": "I’m Joseph Asay, a Statistics student at Brigham Young University with an emphasis in Data Science. My main professional interest is basketball analytics, particularly applying statistical models and data tools to player evaluation and performance.\nThrough my work with the Utah Jazz, BYU basketball, and university research, I’ve had opportunities to work with sports data in both research and live game environments. I also enjoy building projects that bring together data collection, modeling, and visualization."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\nBrigham Young University — Provo, UT\nB.S. Statistics, Data Science Emphasis | Expected April 2027\n\nGPA: 3.77 | Academic Scholarship\nRelevant coursework: Statistical Modeling, Probability, Data Science, Machine Learning"
+  },
+  {
+    "objectID": "about.html#professional-experience",
+    "href": "about.html#professional-experience",
+    "title": "About Me",
+    "section": "Professional Experience",
+    "text": "Professional Experience\n\nUtah Jazz — Stats Producer & Vixi Operator\nSalt Lake City, UT | September 2026–Present\n\nCollaborate with the CG operator to produce statistical storylines, stat bugs, and graphics for the in-arena video board; built a Streamlit app to organize player statistics and presentation notes.\nAssist in developing game-ready shot charts and 3D heat maps, and operate Vixi software to deliver live fan-interaction experiences.\n\n\n\nBrigham Young University — Student Researcher & Teaching Assistant\nProvo, UT | August 2025–Present (research since August 2026)\n\nAnalyze nearly one million player-game records dating back to 1985, using linear mixed-effects models to study which NBA players perform better or worse in the playoffs. The research emphasizes advanced statistics such as pVORP, TS%, BPM, PER, and win shares.\nHelp teach Statistical Modeling for Data Science, supporting students as they learn probabilistic and non-probabilistic models.\n\n\n\nSports Info Solutions — Data Scout\nProvo, UT | October 2026–Present\n\nCapture real-time scouting data using in-game tracking software at BYU men’s basketball home games.\n\n\n\nProximity — Data Specialist\nCenterville, UT | January 2026–August 2026\n\nScraped, cleaned, and structured more than 75,000 candidate, business, and PAC records for sales pipelines, web platforms, and internal reporting.\nBuilt Python workflows for data collection and processing to support future lead-scoring and targeted outreach efforts.\n\n\n\nBYU Men’s Basketball Internship Program — Recruiting Data Intern\nProvo, UT | November 2025–March 2026\n\nCompiled datasets on NCAA, G League, and international prospects using Synergy, DraftExpress, and other scouting resources for presentation to Coach Young and his staff."
+  },
+  {
+    "objectID": "about.html#selected-projects",
+    "href": "about.html#selected-projects",
+    "title": "About Me",
+    "section": "Selected Projects",
+    "text": "Selected Projects\n\nNBA Possession Identification: A Python tutorial for grouping NBA play-by-play events into possessions. Read the tutorial.\nMLB Agentic Data Analysis Assistant: An AI chatbot that answers questions about historical MLB statistics using Gemini and pandas.\nAirport Flight Delay Analysis: Regression modeling in R to study factors associated with flight delays.\nNBA Salary Cap Dashboard (in development): A website for exploring NBA player contracts, salary cap information, and draft capital."
+  },
+  {
+    "objectID": "about.html#technical-skills",
+    "href": "about.html#technical-skills",
+    "title": "About Me",
+    "section": "Technical Skills",
+    "text": "Technical Skills\n\nProgramming & Data: Python, R, SQL, C++, Excel, pandas, NumPy, HTML\nData Engineering: Web scraping, APIs, JSON, Playwright, BeautifulSoup, Requests\nStatistical Modeling: Linear and logistic regression, mixed-effects models, decision trees, random forests, clustering, cross-validation\nVisualization & AI: Streamlit, Tableau, Matplotlib, Seaborn, LangChain, Gemini API\nLanguages: English, Spanish"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About Me",
+    "section": "Contact",
+    "text": "Contact\nEmail: joseph.asay23@gmail.com\nGitHub: github.com/Joseph-Asay"
   },
   {
     "objectID": "blog.html",

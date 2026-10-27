@@ -1,5 +1,77 @@
+
 ---
-title: "About"
+title: "About Me"
+toc: true
 ---
 
-About this site
+:::: {.columns}
+::: {.column width="32%"}
+<img src="profile.jpg" alt="Joseph Asay" style="width: 100%; transform: translateX(-30px);">
+:::
+
+::: {.column width="68%"}
+## A Little About Me
+
+I'm Joseph Asay, a Statistics student at Brigham Young University with an emphasis in Data Science. My main professional interest is basketball analytics, particularly applying statistical models and data tools to player evaluation and performance.
+
+Through my work with the Utah Jazz, BYU basketball, and university research, I've had opportunities to work with sports data in both research and live game environments. I also enjoy building projects that bring together data collection, modeling, and visualization.
+:::
+::::
+
+## Education
+
+**Brigham Young University** — Provo, UT  
+**B.S. Statistics, Data Science Emphasis** | Expected April 2027
+
+- **GPA:** 3.77 | Academic Scholarship
+- **Relevant coursework:** Statistical Modeling, Probability, Data Science, Machine Learning
+
+## Professional Experience
+
+### Utah Jazz — Stats Producer & Vixi Operator
+*Salt Lake City, UT | September 2026–Present*
+
+- Collaborate with the CG operator to produce statistical storylines, stat bugs, and graphics for the in-arena video board; built a Streamlit app to organize player statistics and presentation notes.
+- Assist in developing game-ready shot charts and 3D heat maps, and operate Vixi software to deliver live fan-interaction experiences.
+
+### Brigham Young University — Student Researcher & Teaching Assistant
+*Provo, UT | August 2025–Present (research since August 2026)*
+
+- Analyze nearly one million player-game records dating back to 1985, using linear mixed-effects models to study which NBA players perform better or worse in the playoffs. The research emphasizes advanced statistics such as pVORP, TS%, BPM, PER, and win shares.
+- Help teach Statistical Modeling for Data Science, supporting students as they learn probabilistic and non-probabilistic models.
+
+### Sports Info Solutions — Data Scout
+*Provo, UT | October 2026–Present*
+
+- Capture real-time scouting data using in-game tracking software at BYU men's basketball home games.
+
+### Proximity — Data Specialist
+*Centerville, UT | January 2026–August 2026*
+
+- Scraped, cleaned, and structured more than 75,000 candidate, business, and PAC records for sales pipelines, web platforms, and internal reporting.
+- Built Python workflows for data collection and processing to support future lead-scoring and targeted outreach efforts.
+
+### BYU Men's Basketball Internship Program — Recruiting Data Intern
+*Provo, UT | November 2025–March 2026*
+
+- Compiled datasets on NCAA, G League, and international prospects using Synergy, DraftExpress, and other scouting resources for presentation to Coach Young and his staff.
+
+## Selected Projects
+
+- **[NBA Possession Identification](https://github.com/Joseph-Asay/github_pages_portfolio):** A Python tutorial for grouping NBA play-by-play events into possessions. [Read the tutorial](blog.qmd).
+- **[MLB Agentic Data Analysis Assistant](https://github.com/Joseph-Asay/MLB_Agentic_Chatbot):** An AI chatbot that answers questions about historical MLB statistics using Gemini and pandas.
+- **[Airport Flight Delay Analysis](https://github.com/Joseph-Asay/Flight_Delay_Analysis):** Regression modeling in R to study factors associated with flight delays.
+- **NBA Salary Cap Dashboard (in development):** A website for exploring NBA player contracts, salary cap information, and draft capital.
+
+## Technical Skills
+
+- **Programming & Data:** Python, R, SQL, C++, Excel, pandas, NumPy, HTML
+- **Data Engineering:** Web scraping, APIs, JSON, Playwright, BeautifulSoup, Requests
+- **Statistical Modeling:** Linear and logistic regression, mixed-effects models, decision trees, random forests, clustering, cross-validation
+- **Visualization & AI:** Streamlit, Tableau, Matplotlib, Seaborn, LangChain, Gemini API
+- **Languages:** English, Spanish
+
+## Contact
+
+**Email:** [joseph.asay23@gmail.com](mailto:joseph.asay23@gmail.com)  
+**GitHub:** [github.com/Joseph-Asay](https://github.com/Joseph-Asay)
