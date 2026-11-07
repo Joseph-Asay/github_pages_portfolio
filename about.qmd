@@ -58,10 +58,12 @@ Through my work with the Utah Jazz, BYU basketball, and university research, I'v
 
 ## Selected Projects
 
-- **[NBA Possession Identification](https://github.com/Joseph-Asay/github_pages_portfolio):** A Python tutorial for grouping NBA play-by-play events into possessions. [Read the tutorial](blog.qmd).
+- **[NBA Possession Identification](https://github.com/Joseph-Asay/github_pages_portfolio):** A Python tutorial for grouping NBA play-by-play events into possessions. [Read the tutorial](posts/nba-possessions.qmd).
+- **[BYU Basketball Roster Analysis](https://github.com/Joseph-Asay/byu-basketball-roster-analysis):** Scraped and cleaned 22 seasons of BYU men's basketball rosters to explore changes in player height, hometown geography, and international representation across three coaching eras. [Read the blog post](posts/byu-roster-analysis.qmd).
 - **[MLB Agentic Data Analysis Assistant](https://github.com/Joseph-Asay/MLB_Agentic_Chatbot):** An AI chatbot that answers questions about historical MLB statistics using Gemini and pandas.
 - **[Airport Flight Delay Analysis](https://github.com/Joseph-Asay/Flight_Delay_Analysis):** Regression modeling in R to study factors associated with flight delays.
 - **NBA Salary Cap Dashboard (in development):** A website for exploring NBA player contracts, salary cap information, and draft capital.
+
 
 ## Technical Skills
 

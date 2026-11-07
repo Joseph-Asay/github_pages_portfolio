@@ -20,7 +20,15 @@ I built a tutorial showing how to turn NBA play-by-play events into groups of po
 
 **Tools:** Python, pandas, nba_api
 
-[GitHub Repository](https://github.com/Joseph-Asay/github_pages_portfolio) | [Read the Tutorial](blog.qmd)
+[GitHub Repository](https://github.com/Joseph-Asay/github_pages_portfolio) | [Read the Tutorial](posts/nba-possessions.qmd)
+
+### BYU Basketball Roster Analysis
+
+I scraped and cleaned 22 seasons of BYU men's basketball rosters, then used pandas to compare height and hometown patterns across three coaching eras. The project explores how roster composition has changed over time, particularly in player height and international representation.
+
+**Tools:** Python, requests, BeautifulSoup, pandas
+
+[GitHub Repository](https://github.com/Joseph-Asay/byu-basketball-roster-analysis) | [Read the Blog Post](posts/byu-roster-analysis.qmd)
 
 ### MLB Agentic Data Analysis Assistant
 

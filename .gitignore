@@ -2,5 +2,6 @@
 /.quarto/
 **/*.quarto_ipynb
 .venv/
-pyproject.toml
-uv.lock
+
+# Ignore local CSV datasets used to generate blog figures
+data/*.csv
